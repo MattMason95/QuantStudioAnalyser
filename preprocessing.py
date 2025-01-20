@@ -76,6 +76,18 @@ class DataProcessor:
         control_genes = str(input(f"Select control genes from {availableGenes}.")).split(',')
 
         control_conditions = str(input(f"Select control conditions from {availableConditions}."))
+
+        invalid_condition = 1
+        while invalid_condition:
+            if control_conditions in availableConditions:
+                print('Control condition identified.')
+                invalid_condition = 0 
+            
+            else:
+                control_conditions = str(input(f"ERROR! Please submit a valid condition from {availableConditions}."))
+                # raise Exception(f'Submitted control condition {control_conditions} not found in data.')
+                
+
         
         return control_genes, control_conditions
 
@@ -126,11 +138,37 @@ class DataProcessor:
 
     
     def dataCleaning(self) -> pd.DataFrame:
-        ## Clean data to detect and remove outliers
-
+        '''
+        Clean data to detect and remove outliers
+        '''
+        ## Retrieve data from upstream parser function
         data = self.parser()
         
-        return data
+        ## Computing dCT for all conditions
+        for name, grouped_data in data.groupby('IsControlCondition'):
+            if name: 
+                print('Control')
+            else: 
+                print('Target')
+            
+            mean_data = grouped_data.groupby(['Sample Name','Target Name']).mean().reset_index(drop=False)
+            samples = mean_data['Sample Name'].unique()
+            
+            print(samples)
+            return mean_data
+
+            
+
+        # control_data = data[data['IsControlCondition'] == 1]
+
+        
+
+        # for sample in samples:
+
+
+
+
+        # return data
 
     # def reports(self,) -> dict:
     #     ## Generate reports from the outcomes of dataCleaning
