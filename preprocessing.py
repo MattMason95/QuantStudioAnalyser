@@ -69,27 +69,32 @@ class DataProcessor:
             if file_size > limit:  # 500MB limit
                 raise ValueError(f"File size ({file_size} bytes) exceeds limit ({limit/100_000}MB)")
 
-    def input_function(self,availableGenes: str, availableConditions: str) -> List:
+    def input_function(self, availableGenes: str, availableConditions: List[str]) -> List:
         '''
         Wait for user to provide input values for the control gene(s) and the control condition(s).
         '''
         control_genes = str(input(f"Select control genes from {availableGenes}.")).split(',')
-
-        control_conditions = str(input(f"Select control conditions from {availableConditions}."))
-
-        invalid_condition = 1
+        
+        control_conditions = str(input(f"Select control condition prefix from {availableConditions}."))
+        
+        invalid_condition = True
         while invalid_condition:
-            if control_conditions in availableConditions:
-                print('Control condition identified.')
-                invalid_condition = 0 
+            # First check if any condition matches (case insensitive)
+            matching_conditions = [condition for condition in availableConditions 
+                                if condition.lower().startswith(control_conditions.lower())]
             
+            if matching_conditions:
+                # Extract the correct case prefix from the first matching condition
+                # by taking the same number of characters as the input length
+                correct_case_prefix = matching_conditions[0][:len(control_conditions)]
+                control_conditions = correct_case_prefix
+                print(f'Control condition identified: {control_conditions}')
+                invalid_condition = False
             else:
-                control_conditions = str(input(f"ERROR! Please submit a valid condition from {availableConditions}."))
-                # raise Exception(f'Submitted control condition {control_conditions} not found in data.')
-                
-
+                control_conditions = str(input(f"ERROR! Please submit a valid condition prefix from {availableConditions}."))
         
         return control_genes, control_conditions
+
 
     def parser(self) -> pd.DataFrame: 
         ## Parse data from input file
