@@ -160,7 +160,35 @@ class DataProcessor:
         An embedded function to evaluate data for the detection and removal of outliers.
         '''
         ## Retrieve data from upstream function
+        ## Get mean Tms for each target (condition independent)
+        average_tms = {}
+        variance_tms = {}
         
+        fig, axs = plt.subplots(2,1,figsize=(8,8))
+
+        for ax, (name, subset) in zip(axs.reshape(-1), data.groupby('Target Name')):
+            average_tms[name] = subset['Tm1'].mean()
+            variance_tms[name] = subset['Tm1'].std()
+            
+            ## Plotting of data
+            ax.boxplot(x=subset['Tm1'],vert=False,whis=0.75)
+            ax.set_xlabel('Melting Temp.')
+            ax.set_ylabel(name)
+
+        
+
+        print(f'Extracted average TMs: {average_tms}','\n',f'Extracted variance of TMs: {variance_tms}')
+
+
+
+
+
+        ## Get mean CT for each target (condition dependent)
+        # average_cts = data.groupby(['Target Name','Condition'])['CT'].mean()
+
+        ## Evaluate technical replicates for deviation 
+
+
         
 
         indices = [0,3,5,7] 
