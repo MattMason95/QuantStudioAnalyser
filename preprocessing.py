@@ -124,6 +124,7 @@ class DataProcessor:
         ## Drop any unexpected columns as these aren't
         if unexpected_columns: 
             parsed_data = parsed_data.drop(columns=unexpected_columns)
+            print(f'Removing unexpected columns: {unexpected_columns}')
 
         ## Wait for user to provide input for the control genes and control columns (required for ddCT analysis)
         user_genes, user_conditions = self.input_function(availableGenes=targets, availableConditions=samples)
@@ -133,47 +134,73 @@ class DataProcessor:
         control_genes = []
 
         if len(user_genes) == 1:
+            ## Select the target with the highest sequence matching ratio from the available variables
             true_target = targets[np.argmax(SM(None,user_genes,x) for x in targets)]
+            
+            ## Replace the user-provided target with the closest matching target
             control_genes = true_target
       
-        parsed_data['IsControlGene'] = parsed_data['Target Name'].apply(lambda x: 1 if x in control_genes else 0)
-        parsed_data['IsControlCondition'] = parsed_data['Sample Name'].apply(lambda x: 1 if user_conditions in x else 0)
+        parsed_data['TargetType'] = parsed_data['Target Name'].apply(lambda x: 'Control' if x in control_genes else 'Target')
+        parsed_data['Condition'] = parsed_data['Sample Name'].apply(lambda x: 'Control' if user_conditions in x else 'Target')
 
         return parsed_data
 
-    
     def dataCleaning(self) -> pd.DataFrame:
         '''
         Clean data to detect and remove outliers
         '''
         ## Retrieve data from upstream parser function
-        data = self.parser()
+        some_data = self.parser()
+
+        return some_data
+
+    def ddctCalculation(self) -> pd.DataFrame:
+        '''
+        Clean data to detect and remove outliers
+        '''
+        ## Retrieve data from upstream parser function
+        data = self.dataCleaning()
         
+        ## Prepare output dataframe for dCT data
+        dct_data = pd.DataFrame()
+
         ## Computing dCT for all conditions
-        for name, grouped_data in data.groupby('IsControlCondition'):
-            if name: 
-                print('Control')
-            else: 
-                print('Target')
+        for _, grouped_conditions in data.groupby('Condition'):            
+            ## Could calculate means of technical replicates at this stage
+            mean_data = grouped_conditions#.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
             
-            mean_data = grouped_data.groupby(['Sample Name','Target Name']).mean().reset_index(drop=False)
-            samples = mean_data['Sample Name'].unique()
+            ## Get mean CT  value for the housekeeping gene(s)
+            hk_gene_mean = mean_data[mean_data['TargetType'] == 'Control']['CT'].mean()
+
+            ## Calculate dCT by subtracting CT values from mean housekeeping gene(s) CT value
+            mean_data['dCT'] = mean_data['CT'].apply(lambda x: hk_gene_mean - x)
             
-            print(samples)
-            return mean_data
+            ## Concatenate output container
+            dct_data = pd.concat([dct_data,mean_data])
 
+        ## Prepare output dataframe for ddCT data
+        ddct_data = pd.DataFrame()
+
+        ## Computing ddCT for all targets
+        for _, grouped_targets in dct_data.groupby('Target Name'):
+            ## Get mean dCT for the control condition
+            target_mean = grouped_targets[grouped_targets['Condition'] == 'Control']['dCT'].mean()
             
+            ## Calculate ddCT by subtracting dCT values from the mean control condition dCT
+            grouped_targets['ddCT'] = grouped_targets['dCT'].apply(lambda x: target_mean - x)
 
-        # control_data = data[data['IsControlCondition'] == 1]
+            ## Concatenate output container
+            ddct_data = pd.concat([ddct_data,grouped_targets])
 
+        ## Calculate fold-change with the 2^(-ddCT) method
+        ddct_data['2^(-ddCT)'] = ddct_data['ddCT'].apply(lambda x: 2**(-x))
+
+        ## Get means of all technical replicates
+        mean_ddCT = ddct_data.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
         
+        ## Return the mean fold-change ddCT data for plotting
+        return mean_ddCT
 
-        # for sample in samples:
-
-
-
-
-        # return data
 
     # def reports(self,) -> dict:
     #     ## Generate reports from the outcomes of dataCleaning
