@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from difflib import SequenceMatcher as SM
 import os
+import matplotlib.pyplot as plt
 
 class DataProcessor:
     '''
@@ -21,10 +22,12 @@ class DataProcessor:
         '''
         self.data = data  # Store the input data
         self.filepath = Path(data) if isinstance(data, (str, Path)) else None
-        self.data = self._load_data()  # Process the data
+        self.data = self.LoadData()  # Process the data
         self._validate_data()
 
-    def _load_data(self):
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    def LoadData(self):
         '''
         Load user data from memory as a DataFrame or from a filepath. 
         '''
@@ -41,6 +44,8 @@ class DataProcessor:
             return pd.read_excel(self.filepath)
         else:
             raise ValueError(f"Unsupported file type: {file_extension}")
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     def _validate_data(self) -> None:
         '''
@@ -69,7 +74,9 @@ class DataProcessor:
             if file_size > limit:  # 500MB limit
                 raise ValueError(f"File size ({file_size} bytes) exceeds limit ({limit/100_000}MB)")
 
-    def input_function(self, availableGenes: str, availableConditions: List[str]) -> List:
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    def InputFunction(self, availableGenes: str, availableConditions: List[str]) -> List:
         '''
         Wait for user to provide input values for the control gene(s) and the control condition(s).
         '''
@@ -95,8 +102,9 @@ class DataProcessor:
         
         return control_genes, control_conditions
 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    def parser(self) -> pd.DataFrame: 
+    def Parser(self) -> pd.DataFrame: 
         ## Parse data from input file
         ## Columns expected from the QuantStudio output
 
@@ -127,7 +135,7 @@ class DataProcessor:
             print(f'Removing unexpected columns: {unexpected_columns}')
 
         ## Wait for user to provide input for the control genes and control columns (required for ddCT analysis)
-        user_genes, user_conditions = self.input_function(availableGenes=targets, availableConditions=samples)
+        user_genes, user_conditions = self.InputFunction(availableGenes=targets, availableConditions=samples)
 
         ## To make user input easier and less error prone, incorporate some fuzzy string matching with sequence matcher
         ## Generate output container
@@ -145,21 +153,33 @@ class DataProcessor:
 
         return parsed_data
 
-    def dataCleaning(self) -> pd.DataFrame:
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    def DataCleaning(self, data: pd.DataFrame) -> pd.DataFrame:
+        '''
+        An embedded function to evaluate data for the detection and removal of outliers.
+        '''
+        ## Retrieve data from upstream function
+        
+        
+
+        indices = [0,3,5,7] 
+
+
+        print(f"Outlying data detected at indices: {indices}. Culling rows.")
+        return indices
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    def ddctCalculation(self, correction=False) -> pd.DataFrame:
         '''
         Clean data to detect and remove outliers
+        
+        Attributes: 
+        - Correction [False / True] (default == False). Set true to remove outliers from data.  
         '''
         ## Retrieve data from upstream parser function
-        some_data = self.parser()
-
-        return some_data
-
-    def ddctCalculation(self) -> pd.DataFrame:
-        '''
-        Clean data to detect and remove outliers
-        '''
-        ## Retrieve data from upstream parser function
-        data = self.dataCleaning()
+        data = self.Parser()
         
         ## Prepare output dataframe for dCT data
         dct_data = pd.DataFrame()
@@ -194,6 +214,19 @@ class DataProcessor:
 
         ## Calculate fold-change with the 2^(-ddCT) method
         ddct_data['2^(-ddCT)'] = ddct_data['ddCT'].apply(lambda x: 2**(-x))
+
+        if correction: 
+            '''
+            Pass data to DataCleaning() function to assess distributions of CTs/TMs 
+            DataCleaning returns list of indices that meet criteria for culling
+            Drop these indices from ddct_data and calculate means from technical replicates
+            '''
+            print(f'Removing outliers exceeding specified threshold.')
+            indices = self.DataCleaning(ddct_data)
+            cleaned_data = ddct_data.drop(index=indices)
+
+            mean_ddCT = cleaned_data.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
+            return mean_ddCT
 
         ## Get means of all technical replicates
         mean_ddCT = ddct_data.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
