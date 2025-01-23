@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from difflib import SequenceMatcher as SM
 import os
+import shutil
 import matplotlib.pyplot as plt
 
 class DataProcessor:
@@ -24,6 +25,7 @@ class DataProcessor:
         self.filepath = Path(data) if isinstance(data, (str, Path)) else None
         self.data = self.LoadData()  # Process the data
         self._validate_data()
+        self.manifest = False
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -32,6 +34,7 @@ class DataProcessor:
         Load user data from memory as a DataFrame or from a filepath. 
         '''
         if isinstance(self.data, pd.DataFrame):
+            print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
             return self.data
         
         if not os.path.exists(self.filepath):
@@ -39,8 +42,10 @@ class DataProcessor:
         
         file_extension = self.filepath.suffix.lower()
         if file_extension == '.csv':
+            print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
             return pd.read_csv(self.filepath)
         elif file_extension in ['.xlsx', '.xls']:
+            print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
             return pd.read_excel(self.filepath)
         else:
             raise ValueError(f"Unsupported file type: {file_extension}")
@@ -80,10 +85,34 @@ class DataProcessor:
         '''
         Wait for user to provide input values for the control gene(s) and the control condition(s).
         '''
+        print(f'\n##### User Inputs. #####\n'.center(shutil.get_terminal_size().columns))
+
         control_genes = str(input(f"Select control genes from {availableGenes}.")).split(',')
         
-        control_conditions = str(input(f"Select control condition prefix from {availableConditions}."))
+        if len(control_genes) > 1:
+                control_genes = str(input(f"ERROR! Too many genes submitted. Please select one control gene from {availableGenes}."))
         
+        invalid_gene = True
+        while invalid_gene: 
+                      
+            control_genes = ''.join(control_genes )
+
+            ratios = [SM(None,''.join(control_genes),x).ratio() for x in availableGenes]
+
+            ## If the maximum ratio is greater than 0.5 (i.e. a match better than 50%)
+            if np.max(ratios) > .33:
+                print(f'Control gene(s): {control_genes}.')
+                ## Get index of highest match and corresponding gene from availableGenes
+                target = availableGenes[np.argmax(ratios)]
+                ## Replace the user-provided target with the closest matching target
+                control_genes = target
+
+                invalid_gene = False
+            else: 
+                control_genes = str(input(f"ERROR! No match found. Please submit a valid control gene from {availableGenes}."))
+        
+        control_conditions = str(input(f"Select control condition prefix from {availableConditions}."))
+
         invalid_condition = True
         while invalid_condition:
             # First check if any condition matches (case insensitive)
@@ -91,15 +120,19 @@ class DataProcessor:
                                 if condition.lower().startswith(control_conditions.lower())]
             
             if matching_conditions:
+                print(f'Control condition(s): {control_conditions}.\n')
                 # Extract the correct case prefix from the first matching condition
                 # by taking the same number of characters as the input length
                 correct_case_prefix = matching_conditions[0][:len(control_conditions)]
                 control_conditions = correct_case_prefix
-                print(f'Control condition identified: {control_conditions}')
+                
                 invalid_condition = False
             else:
                 control_conditions = str(input(f"ERROR! Please submit a valid condition prefix from {availableConditions}."))
-        
+
+        print('.'*shutil.get_terminal_size().columns,'\n')
+        print(f'Control gene identified: {control_genes}.')
+        print(f'Control condition identified: {control_conditions}.')
         return control_genes, control_conditions
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,6 +140,8 @@ class DataProcessor:
     def Parser(self) -> pd.DataFrame: 
         ## Parse data from input file
         ## Columns expected from the QuantStudio output
+
+        print('\n##### Starting data parsing. #####\n'.center(shutil.get_terminal_size().columns))
 
         expected_columns = ['Well Position','Sample Name','Target Name','CT','Ct Threshold','Tm1']
 
@@ -117,6 +152,11 @@ class DataProcessor:
         unexpected_columns = [x for x in columns if x not in expected_columns]
 
         print(f'Input data has columns: {columns}. There are {len(unexpected_columns)} unexpected column(s): {unexpected_columns}.')
+
+        ## Drop any unexpected columns as these aren't required downstream
+        if unexpected_columns: 
+            parsed_data = parsed_data.drop(columns=unexpected_columns)
+            print(f'Removing unexpected columns: {unexpected_columns}')
 
         ## Declare qPCR targets found in the dataset
         targets = self.data['Target Name'].unique().tolist()
@@ -129,86 +169,98 @@ class DataProcessor:
         ## Preserve the original data by making a copy for modification (memory constraints shouldn't be an issue for this type of data)
         parsed_data = self.data.copy()
 
-        ## Drop any unexpected columns as these aren't
-        if unexpected_columns: 
-            parsed_data = parsed_data.drop(columns=unexpected_columns)
-            print(f'Removing unexpected columns: {unexpected_columns}')
-
         ## Wait for user to provide input for the control genes and control columns (required for ddCT analysis)
         user_genes, user_conditions = self.InputFunction(availableGenes=targets, availableConditions=samples)
 
-        ## To make user input easier and less error prone, incorporate some fuzzy string matching with sequence matcher
-        ## Generate output container
-        control_genes = []
-
-        if len(user_genes) == 1:
-            ## Select the target with the highest sequence matching ratio from the available variables
-            true_target = targets[np.argmax(SM(None,user_genes,x) for x in targets)]
-            
-            ## Replace the user-provided target with the closest matching target
-            control_genes = true_target
-      
-        parsed_data['TargetType'] = parsed_data['Target Name'].apply(lambda x: 'Control' if x in control_genes else 'Target')
+        ## Designate control and target identities for genes and samples      
+        parsed_data['TargetType'] = parsed_data['Target Name'].apply(lambda x: 'Control' if x in user_genes else 'Target')
         parsed_data['Condition'] = parsed_data['Sample Name'].apply(lambda x: 'Control' if user_conditions in x else 'Target')
+
+        print('\n##### Completed data parsing. #####\n'.center(shutil.get_terminal_size().columns))
+        
+        self.manifest = True
 
         return parsed_data
 
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
+    def reports(func) -> None:
+        ## Decorator for generating reports from the DataCleaning function
+        def wrapper(self, data):
+            ## Run DataCleaning within wrapper
+            outputs  = func(self, data)
+
+            print(f'Compiling reports from {func.__name__}.')
+            
+            indices, averages, variances = outputs
+
+            outlier_info = data.loc[indices]
+
+            outlier_info['Tm1DeviationFromMedian'] = outlier_info.apply(lambda row: abs(row['Tm1'] - averages[f'Tm1:{row["Target Name"]}'])/variances[f'Tm1:{row["Target Name"]}'], axis=1)
+            outlier_info['CtDeviationFromMedian'] = outlier_info.apply(lambda row: abs(row['CT'] - averages[f'CT:{row["Target Name"]}'])/variances[f'CT:{row["Target Name"]}'], axis=1)
+
+            print('Stored outlier reports in DataProcessor().reports_data.')
+            self.reports_data = outlier_info
+            
+            return outputs
+
+        return wrapper
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    @reports
     def DataCleaning(self, data: pd.DataFrame) -> pd.DataFrame:
         '''
         An embedded function to evaluate data for the detection and removal of outliers.
         '''
         ## Retrieve data from upstream function
         ## Get mean Tms for each target (condition independent)
-        average_tms = {}
-        variance_tms = {}
+        print('\n##### Starting data cleaning. #####\n'.center(shutil.get_terminal_size().columns))
+    
+        averages = {}
+        variances = {}
         
-        fig, axs = plt.subplots(2,1,figsize=(8,8))
+        fig, axs = plt.subplots(4,1,figsize=(8,8))
 
         for ax, (name, subset) in zip(axs.reshape(-1), data.groupby('Target Name')):
-            average_tms[name] = subset['Tm1'].mean()
-            variance_tms[name] = subset['Tm1'].std()
+            averages[f'Tm1:{name}'] = np.median(subset['Tm1'])
+            averages[f'CT:{name}'] = np.median(subset['CT'])
+            variances[f'Tm1:{name}'] = subset['Tm1'].std()
+            variances[f'CT:{name}'] = subset['CT'].std()
             
             ## Plotting of data
             ax.boxplot(x=subset['Tm1'],vert=False,whis=0.75)
+            ax.boxplot(x=subset['CT'],vert=False,whis=0.75)
             ax.set_xlabel('Melting Temp.')
             ax.set_ylabel(name)
 
-        
-
-        print(f'Extracted average TMs: {average_tms}','\n',f'Extracted variance of TMs: {variance_tms}')
-
-
-
-
-
-        ## Get mean CT for each target (condition dependent)
-        # average_cts = data.groupby(['Target Name','Condition'])['CT'].mean()
-
-        ## Evaluate technical replicates for deviation 
-
-
-        
-
+        ## Example indices for culling, following evaluate of medians/variances
         indices = [0,3,5,7] 
 
-
         print(f"Outlying data detected at indices: {indices}. Culling rows.")
-        return indices
+
+        return indices, averages, variances
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    def ddctCalculation(self, correction=False) -> pd.DataFrame:
+    def ddctCalculation(self, data=None, correction=False) -> pd.DataFrame:
         '''
         Clean data to detect and remove outliers
         
         Attributes: 
-        - Correction [False / True] (default == False). Set true to remove outliers from data.  
+        - Correction [False / True] (default = False). Set true to remove outliers from data.  
         '''
-        ## Retrieve data from upstream parser function
-        data = self.Parser()
+        if data is None:         
+            ## Retrieve data from upstream parser function
+            if not hasattr(self, 'Parser') or not callable(getattr(self, 'Parser', None)):
+                raise AttributeError('No Parser() method available to fetch data.')
+
+            data = self.Parser()
         
+        if not self.manifest:
+            raise ValueError('Data has not been parsed. Please use the Parser() function first.')
+
+
         ## Prepare output dataframe for dCT data
         dct_data = pd.DataFrame()
 
@@ -249,10 +301,10 @@ class DataProcessor:
             DataCleaning returns list of indices that meet criteria for culling
             Drop these indices from ddct_data and calculate means from technical replicates
             '''
-            print(f'Removing outliers exceeding specified threshold.')
-            indices = self.DataCleaning(ddct_data)
-            cleaned_data = ddct_data.drop(index=indices)
+            indices, _,_ = self.DataCleaning(ddct_data)
+            cleaned_data = ddct_data.drop(labels=indices)
 
+            ## Get means of remaining technical replicates following outlier removal
             mean_ddCT = cleaned_data.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
             return mean_ddCT
 
@@ -261,7 +313,3 @@ class DataProcessor:
         
         ## Return the mean fold-change ddCT data for plotting
         return mean_ddCT
-
-
-    # def reports(self,) -> dict:
-    #     ## Generate reports from the outcomes of dataCleaning
