@@ -1,16 +1,22 @@
 ## Import libraries
-from typing import Dict, List, Optional, Union, Any
-from pathlib import Path
-import pandas as pd
-import numpy as np
-from difflib import SequenceMatcher as SM
 import os
 import shutil
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+
+from pathlib import Path
 from dataclasses import dataclass
+from difflib import SequenceMatcher as SM
+from typing import Dict, List, Optional, Union, Any
+
+from file_logging import FileTracker
 
 @dataclass
 class FileProcessResult:
+    ''' 
+    Data class for main function. Returns an object containing the dataframe and additional metadata.
+    '''
     data: pd.DataFrame
     file_info: Dict[str, Any]
 
@@ -33,15 +39,18 @@ class DataProcessor:
     
     '''
 
-    def __init__(self, data: Union[pd.DataFrame,str,Path]):
+    def __init__(self,
+                 data: Union[pd.DataFrame,str,Path],
+                 log_dir: str = 'logs'):
         '''
         Initialise the DataProcessor with either a dataframe from memory or a filepath to a .csv file. 
         '''
+        self.file_tracker = FileTracker(log_dir=log_dir)
+    
         self.data = data  # Store the input data
         self.filepath = Path(data) if isinstance(data, (str, Path)) else None
         self.data = self.LoadData()  # Process the data
         self._validate_data()
-        self.manifest = None
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -51,20 +60,36 @@ class DataProcessor:
         '''
         if isinstance(self.data, pd.DataFrame):
             print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
-            return self.data
+            file_info
+            return FileProcessResult(data=self.data, file_info={''})
         
         if not os.path.exists(self.filepath):
             raise FileNotFoundError(f'No file found at {self.filepath}.')
         
         file_extension = self.filepath.suffix.lower()
+        extra_info = {'file_extension':file_extension}
+
         if file_extension == '.csv':
             print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
+            ## Load data from .csv file 
             loaded_data = pd.read_csv(self.filepath)
-            return loaded_data
+
+            ## Generate unique file info, store metadata 
+            file_info = self.file_tracker.track_operation(self.filepath, 'file_read', extra_info)
+            
+            ## Return dataframe and metadata in FileProcessResult object
+            return FileProcessResult(data=loaded_data,file_info=file_info)
+        
         elif file_extension in ['.xlsx', '.xls']:
             print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
+            ## Load data direct from excel 
             loaded_data = pd.read_excel(self.filepath)
-            return loaded_data
+
+            ## Generate unique file information, store metadata
+            file_info = self.file_tracker.track_operation(self.filepath, 'file_read', extra_info)
+
+            ## Return dataframe and metadata in FileProcessResult object
+            return FileProcessResult(data=loaded_data,file_info=file_info)
         else:
             raise ValueError(f"Unsupported file type: {file_extension}")
 
@@ -75,10 +100,12 @@ class DataProcessor:
         Validate the format of the loaded data.
         '''
         # Basic DataFrame validation
-        if not isinstance(self.data, pd.DataFrame):
+        data = self.data.data
+        
+        if not isinstance(data, pd.DataFrame):
             raise TypeError("Data not loaded as a DataFrame.")
         
-        if self.data.empty:
+        if data.empty:
             raise ValueError("Provided DataFrame is empty.")
             
         # File-specific validation
@@ -161,7 +188,7 @@ class DataProcessor:
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    def Parser(self) -> pd.DataFrame: 
+    def Parser(self) -> FileProcessResult: 
         ## Parse data from input file
         ## Columns expected from the QuantStudio output
 
@@ -169,8 +196,16 @@ class DataProcessor:
 
         expected_columns = ['Well Position','Sample Name','Target Name','CT','Ct Threshold','Tm1']
 
+        data = self.data
+
+        if data is not FileProcessResult:
+            print('Data loaded incorrectly.')
+
+        data = data.data
+        # metadata = data.file_info
+
         ## Actual columns in the loaded data
-        columns = self.data.columns.tolist()
+        columns = data.columns.tolist()
 
         ## Are there any unexpected columns in the input data? 
         unexpected_columns = [x for x in columns if x not in expected_columns]
@@ -183,15 +218,15 @@ class DataProcessor:
             print(f'Removing unexpected columns: {unexpected_columns}')
 
         ## Declare qPCR targets found in the dataset
-        targets = self.data['Target Name'].unique().tolist()
+        targets = data['Target Name'].unique().tolist()
         print(f'Input data has {len(targets)} unique targets: {targets}.')
 
         ## Declare qPCR samples found in the dataset
-        samples = self.data['Sample Name'].unique().tolist()
+        samples = data['Sample Name'].unique().tolist()
         print(f'Input data has {len(samples)} unique samples: {samples}.')
         
         ## Preserve the original data by making a copy for modification (memory constraints shouldn't be an issue for this type of data)
-        parsed_data = self.data.copy()
+        parsed_data = data.copy()
 
         ## Wait for user to provide input for the control genes and control columns (required for ddCT analysis)
         user_genes, user_conditions = self.InputFunction(availableGenes=targets, availableConditions=samples)
@@ -202,9 +237,13 @@ class DataProcessor:
 
         print('\n##### Completed data parsing. #####\n'.center(shutil.get_terminal_size().columns))
         
-        self.manifest = True
+        file_info = {
+            'operation':'parsed',
+            'N_targets':len(targets),
+            'N_samples':len(samples)
+        }
 
-        return parsed_data
+        return FileProcessResult(data=parsed_data, file_info=file_info)
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
@@ -270,7 +309,7 @@ class DataProcessor:
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    def ddctCalculation(self, data=None, correction=False) -> pd.DataFrame:
+    def ddctCalculation(self, data=[None, FileProcessResult], correction=False) -> pd.DataFrame:
         '''
         Clean data to detect and remove outliers
         
@@ -284,9 +323,16 @@ class DataProcessor:
 
             data = self.Parser()
         
-        if not self.manifest:
-            raise ValueError('Data has not been parsed. Please use the Parser() function first.')
-
+        if data is FileProcessResult:
+            data = data.data
+            registration = data.file_info['operation']
+            missing_values = [x for x in ['loaded','parsed'] if x not in registration]
+            function_map = {
+                'loaded':'DataProcessor()',
+                'parsed':'Parser()'
+            }
+            if missing_values:
+                raise ValueError('Data improperly loaded. Register missing {}. Use function {function_map[missing_values]}')
 
         ## Prepare output dataframe for dCT data
         dct_data = pd.DataFrame()

@@ -1,0 +1,26 @@
+2025-01-24 15:26:52,365 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:28:18,859 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
