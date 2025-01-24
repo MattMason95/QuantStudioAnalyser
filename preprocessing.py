@@ -1,5 +1,5 @@
 ## Import libraries
-from typing import List, Optional, Union
+from typing import Dict, List, Optional, Union, Any
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -7,6 +7,22 @@ from difflib import SequenceMatcher as SM
 import os
 import shutil
 import matplotlib.pyplot as plt
+from dataclasses import dataclass
+
+@dataclass
+class FileProcessResult:
+    data: pd.DataFrame
+    file_info: Dict[str, Any]
+
+    def __getitem__(self, key):
+        if key == 'data':
+            return self.data
+        elif key == 'file_info':
+            return self.file_info
+        else:
+            raise KeyError(f'Invalid key: {key}.')
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 class DataProcessor:
     '''
@@ -25,7 +41,7 @@ class DataProcessor:
         self.filepath = Path(data) if isinstance(data, (str, Path)) else None
         self.data = self.LoadData()  # Process the data
         self._validate_data()
-        self.manifest = False
+        self.manifest = None
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -43,10 +59,12 @@ class DataProcessor:
         file_extension = self.filepath.suffix.lower()
         if file_extension == '.csv':
             print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
-            return pd.read_csv(self.filepath)
+            loaded_data = pd.read_csv(self.filepath)
+            return loaded_data
         elif file_extension in ['.xlsx', '.xls']:
             print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
-            return pd.read_excel(self.filepath)
+            loaded_data = pd.read_excel(self.filepath)
+            return loaded_data
         else:
             raise ValueError(f"Unsupported file type: {file_extension}")
 
@@ -84,6 +102,12 @@ class DataProcessor:
     def InputFunction(self, availableGenes: str, availableConditions: List[str]) -> List:
         '''
         Wait for user to provide input values for the control gene(s) and the control condition(s).
+        Optimise user input to find best match in the existing data. 
+        Prompt re-entry if there are no good matches.
+
+        Attributes:
+        availableGenes - Targets extracted from the loaded data that could be selected as control genes.
+        availableConditions - Sample identifiers extracted from the loaded data that could be selected as control conditions. 
         '''
         print(f'\n##### User Inputs. #####\n'.center(shutil.get_terminal_size().columns))
 
@@ -222,15 +246,18 @@ class DataProcessor:
         
         fig, axs = plt.subplots(4,1,figsize=(8,8))
 
-        for ax, (name, subset) in zip(axs.reshape(-1), data.groupby('Target Name')):
+        ax = axs.reshape(-1)
+        
+        for idx, (name, subset) in enumerate(data.groupby('Target Name')):
+            i = idx + 1 
             averages[f'Tm1:{name}'] = np.median(subset['Tm1'])
             averages[f'CT:{name}'] = np.median(subset['CT'])
             variances[f'Tm1:{name}'] = subset['Tm1'].std()
             variances[f'CT:{name}'] = subset['CT'].std()
             
             ## Plotting of data
-            ax.boxplot(x=subset['Tm1'],vert=False,whis=0.75)
-            ax.boxplot(x=subset['CT'],vert=False,whis=0.75)
+            ax[idx].boxplot(x=subset['Tm1'],vert=False,whis=0.75)
+            ax[idx+i].boxplot(x=subset['CT'],vert=False,whis=0.75)
             ax.set_xlabel('Melting Temp.')
             ax.set_ylabel(name)
 
