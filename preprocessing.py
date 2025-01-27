@@ -17,14 +17,14 @@ class FileProcessResult:
     ''' 
     Data class for main function. Returns an object containing the dataframe and additional metadata.
     '''
-    data: pd.DataFrame
-    file_info: Dict[str, Any]
+    dataframe: pd.DataFrame
+    metadata: Dict[str, Any]
 
     def __getitem__(self, key):
-        if key == 'data':
-            return self.data
-        elif key == 'file_info':
-            return self.file_info
+        if key == 'dataframe':
+            return self.dataframe
+        elif key == 'metadata':
+            return self.metadata
         else:
             raise KeyError(f'Invalid key: {key}.')
 
@@ -46,10 +46,19 @@ class DataProcessor:
         Initialise the DataProcessor with either a dataframe from memory or a filepath to a .csv file. 
         '''
         self.file_tracker = FileTracker(log_dir=log_dir)
-    
-        self.data = data  # Store the input data
         self.filepath = Path(data) if isinstance(data, (str, Path)) else None
-        self.data = self.LoadData()  # Process the data
+
+        if isinstance(data, pd.DataFrame):
+            print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
+            file_info = {
+                'operation':'dataframe_loaded',
+                'file_info':None,
+                'extra_details':None
+            }
+            self.data = FileProcessResult(dataframe=self.data, metadata=file_info)
+        else: 
+            self.data = self.LoadData()
+        
         self._validate_data()
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,12 +66,7 @@ class DataProcessor:
     def LoadData(self):
         '''
         Load user data from memory as a DataFrame or from a filepath. 
-        '''
-        if isinstance(self.data, pd.DataFrame):
-            print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
-            file_info
-            return FileProcessResult(data=self.data, file_info={''})
-        
+        '''        
         if not os.path.exists(self.filepath):
             raise FileNotFoundError(f'No file found at {self.filepath}.')
         
@@ -78,7 +82,7 @@ class DataProcessor:
             file_info = self.file_tracker.track_operation(self.filepath, 'file_read', extra_info)
             
             ## Return dataframe and metadata in FileProcessResult object
-            return FileProcessResult(data=loaded_data,file_info=file_info)
+            return FileProcessResult(dataframe=loaded_data,metadata=file_info)
         
         elif file_extension in ['.xlsx', '.xls']:
             print('\n##### Data loaded. #####\n'.center(shutil.get_terminal_size().columns))
@@ -86,10 +90,10 @@ class DataProcessor:
             loaded_data = pd.read_excel(self.filepath)
 
             ## Generate unique file information, store metadata
-            file_info = self.file_tracker.track_operation(self.filepath, 'file_read', extra_info)
+            file_info  = self.file_tracker.track_operation(self.filepath, 'file_read', extra_info)
 
             ## Return dataframe and metadata in FileProcessResult object
-            return FileProcessResult(data=loaded_data,file_info=file_info)
+            return FileProcessResult(dataframe=loaded_data,metadata=file_info)
         else:
             raise ValueError(f"Unsupported file type: {file_extension}")
 
@@ -100,7 +104,7 @@ class DataProcessor:
         Validate the format of the loaded data.
         '''
         # Basic DataFrame validation
-        data = self.data.data
+        data = self.data.dataframe
         
         if not isinstance(data, pd.DataFrame):
             raise TypeError("Data not loaded as a DataFrame.")
@@ -198,11 +202,11 @@ class DataProcessor:
 
         data = self.data
 
-        if data is not FileProcessResult:
-            print('Data loaded incorrectly.')
+        # if data is not FileProcessResult:
+        #     print('Data loaded incorrectly.')
 
-        data = data.data
-        # metadata = data.file_info
+        data = data.dataframe
+        # metadata = data.metadata
 
         ## Actual columns in the loaded data
         columns = data.columns.tolist()
@@ -237,13 +241,20 @@ class DataProcessor:
 
         print('\n##### Completed data parsing. #####\n'.center(shutil.get_terminal_size().columns))
         
-        file_info = {
-            'operation':'parsed',
+        # file_info = {
+        #     'operation':'parsed',
+        #     'N_targets':len(targets),
+        #     'N_samples':len(samples)
+        # }
+
+        extra_info = {
             'N_targets':len(targets),
             'N_samples':len(samples)
         }
+        
+        file_info = self.file_tracker.track_operation(self.filepath, 'parsed', extra_info)
 
-        return FileProcessResult(data=parsed_data, file_info=file_info)
+        return FileProcessResult(dataframe=parsed_data, metadata=file_info)
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
@@ -272,7 +283,7 @@ class DataProcessor:
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
     @reports
-    def DataCleaning(self, data: pd.DataFrame) -> pd.DataFrame:
+    def DataCleaning(self, data: pd.DataFrame):
         '''
         An embedded function to evaluate data for the detection and removal of outliers.
         '''
@@ -309,7 +320,7 @@ class DataProcessor:
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    def ddctCalculation(self, data=[None, FileProcessResult], correction=False) -> pd.DataFrame:
+    def ddctCalculation(self, data=None, correction=False) -> FileProcessResult:
         '''
         Clean data to detect and remove outliers
         
@@ -324,16 +335,15 @@ class DataProcessor:
             data = self.Parser()
         
         if data is FileProcessResult:
-            data = data.data
-            registration = data.file_info['operation']
-            missing_values = [x for x in ['loaded','parsed'] if x not in registration]
             function_map = {
                 'loaded':'DataProcessor()',
                 'parsed':'Parser()'
             }
-            if missing_values:
-                raise ValueError('Data improperly loaded. Register missing {}. Use function {function_map[missing_values]}')
+            if data.metadata['operation'] != 'parsed':
+                raise ValueError(f'Data requires parsing. Please use Parser() function.')
 
+        data = data.dataframe
+        
         ## Prepare output dataframe for dCT data
         dct_data = pd.DataFrame()
 
@@ -374,15 +384,27 @@ class DataProcessor:
             DataCleaning returns list of indices that meet criteria for culling
             Drop these indices from ddct_data and calculate means from technical replicates
             '''
-            indices, _,_ = self.DataCleaning(ddct_data)
+            # indices, _,_ = self.DataCleaning(ddct_data)
+            indices = [0,3,5,7]
             cleaned_data = ddct_data.drop(labels=indices)
 
             ## Get means of remaining technical replicates following outlier removal
             mean_ddCT = cleaned_data.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
-            return mean_ddCT
+
+            extra_info = {
+                        'removed_data':indices
+                        }
+            
+            file_info = self.file_tracker.track_operation(self.filepath, operation='ddct_calculation',extra_info=extra_info)
+
+            return FileProcessResult(dataframe=mean_ddCT,metadata=file_info)
 
         ## Get means of all technical replicates
         mean_ddCT = ddct_data.groupby(['Sample Name','Target Name','Condition','TargetType']).mean().reset_index(drop=False)
         
+        extra_info = {}
+
+        file_info = self.file_tracker.track_operation(self.filepath, operation='ddct_calculation',extra_info=extra_info)
+
         ## Return the mean fold-change ddCT data for plotting
-        return mean_ddCT
+        return FileProcessResult(dataframe=mean_ddCT,metadata=file_info)

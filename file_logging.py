@@ -28,9 +28,9 @@ class FileTracker:
         file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s: %(message)s'))
         self.logger.addHandler(file_handler)
         
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
-        self.logger.addHandler(console_handler)
+        # console_handler = logging.StreamHandler()
+        # console_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
+        # self.logger.addHandler(console_handler)
     
     def register_file(self,
                       filepath: Union[Path, str],
@@ -47,6 +47,7 @@ class FileTracker:
                 'hash': file_hash,
                 'modified_time': os.path.getmtime(filepath)
             }
+        
         except Exception as e:
             self.logger.error(f"Error generating file signature: {e}")
             return {}
@@ -68,12 +69,7 @@ class FileTracker:
             
             self.logger.info(json.dumps(log_entry, indent=2))
 
-            meta_data = {
-                'operation': operation,
-                'file_info': file_signature,
-            }
-
-            return meta_data
+            return log_entry
         
         except Exception as e:
             self.logger.error(f"Tracking error for {filepath}: {e}")

@@ -24,3 +24,3489 @@
     "file_extension": ".xls"
   }
 }
+2025-01-24 15:29:21,393 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:29:37,283 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:29:37,283 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:29:41,883 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:29:41,883 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:29:41,883 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:32:54,810 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:32:54,810 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:32:54,810 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 15:32:54,810 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 17:41:26,719 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 17:47:15,234 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 17:47:49,392 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 17:49:59,190 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 17:55:56,121 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 17:57:46,561 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:01:42,425 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:01:59,635 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:02:19,489 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:05:23,649 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:06:48,934 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:06:48,934 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:07:18,885 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:07:18,885 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:07:18,885 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:07:48,908 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:07:55,219 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:07:55,219 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:08:11,064 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:08:12,759 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:08:12,759 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:08:46,229 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:08:46,273 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:08:46,273 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:41,028 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:41,028 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:41,028 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:53,370 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:53,370 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:53,370 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:09:53,370 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:11:34,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:11:34,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:11:34,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:11:34,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-24 18:11:34,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:25:28,192 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:25:37,791 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:25:59,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data2.xlsx",
+    "size_bytes": 11724,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data2.xlsx",
+    "hash": "b074420d4dcb4c43a9a154a328d16a92",
+    "modified_time": 1737462956.0
+  },
+  "extra_details": {
+    "file_extension": ".xlsx"
+  }
+}
+2025-01-27 11:25:59,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data2.xlsx",
+    "size_bytes": 11724,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data2.xlsx",
+    "hash": "b074420d4dcb4c43a9a154a328d16a92",
+    "modified_time": 1737462956.0
+  },
+  "extra_details": {
+    "file_extension": ".xlsx"
+  }
+}
+2025-01-27 11:25:59,675 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data2.xlsx",
+    "size_bytes": 11724,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data2.xlsx",
+    "hash": "b074420d4dcb4c43a9a154a328d16a92",
+    "modified_time": 1737462956.0
+  },
+  "extra_details": {
+    "file_extension": ".xlsx"
+  }
+}
+2025-01-27 11:26:16,562 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:16,562 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:16,562 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:16,562 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:22,558 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:22,558 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:22,558 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:22,558 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:26:22,558 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:00,061 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:00,094 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:00,094 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:02,268 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 11:28:02,268 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 11:28:20,627 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:20,659 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:20,659 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 11:28:23,137 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 11:28:23,137 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:17:15,317 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:17:23,760 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:17:23,760 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:17:25,562 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:17:25,562 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:18:05,148 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:18:05,148 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:18:05,148 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:18:44,167 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:18:44,167 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:18:44,167 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:18:44,167 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:20:58,268 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:20:58,268 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:20:58,268 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:20:58,268 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:20:58,268 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:21:32,022 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:21:49,907 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:22:36,520 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:22:47,613 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:23:20,548 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:23:20,587 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:23:20,587 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:23:44,382 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:23:47,966 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:24:53,259 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:24:55,297 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:25:40,561 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:25:43,898 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:28:35,721 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:28:37,848 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:29:09,040 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:29:10,777 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:29:43,472 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:29:46,182 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:30:45,188 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:30:47,517 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:31:56,551 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:24,851 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:24,851 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:33,649 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:33,649 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:33,649 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:46,329 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:46,329 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:46,329 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:46,329 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:51,863 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:51,863 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:51,863 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:51,863 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:32:51,863 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:32,960 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:32,960 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:32,960 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:32,960 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:32,960 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:32,960 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:33:38,904 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:33:38,904 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:33:38,904 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:33:38,904 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:33:38,904 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:33:38,904 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:06,756 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:34:10,592 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:42,685 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:35:45,622 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:43,976 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:46,632 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:49,578 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:52,212 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:36:57,523 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:01,067 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:23,308 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:27,053 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:48,487 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:37:50,780 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:37:50,790 - INFO: {
+  "operation": "ddct_calculation",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {}
+}
+2025-01-27 16:39:32,738 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:39:34,843 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:39:34,854 - INFO: {
+  "operation": "ddct_calculation",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "removed_data": [
+      0,
+      3,
+      5,
+      7
+    ]
+  }
+}
+2025-01-27 16:40:43,143 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:40:43,143 - INFO: {
+  "operation": "file_read",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "file_extension": ".xls"
+  }
+}
+2025-01-27 16:40:45,045 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:40:45,045 - INFO: {
+  "operation": "parsed",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "N_targets": 2,
+    "N_samples": 6
+  }
+}
+2025-01-27 16:40:45,056 - INFO: {
+  "operation": "ddct_calculation",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "removed_data": [
+      0,
+      3,
+      5,
+      7
+    ]
+  }
+}
+2025-01-27 16:40:45,056 - INFO: {
+  "operation": "ddct_calculation",
+  "file_info": {
+    "filename": "testing_data.xls",
+    "size_bytes": 23552,
+    "full_path": "c:\\Users\\mmaso\\OneDrive\\Python_Directory\\QuantStudio_analyser\\testing_data.xls",
+    "hash": "03bd4887dba19e6a6a01e0bcb71ce491",
+    "modified_time": 1737372020.0
+  },
+  "extra_details": {
+    "removed_data": [
+      0,
+      3,
+      5,
+      7
+    ]
+  }
+}
